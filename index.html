@@ -3,36 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Formulário</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Formulário de cadastro </h1>
     <form>
-        <label for="">Nome</label><br>
-        <input type="text" name="nome" id="nome"><br>
+        <h1>Formulário de cadastro </h1>
+        <div class="grid">
+            <div>
+                <label for="">Nome</label>
+        <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="">Sobrenome</label>
+        <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </div>
+        
 
-        <label >Usuário</label><br>
-        <input type="text" name="usuario" id="usuario"><br>
+        
 
-        <label for="">Data de nascimento</label><br>
-        <input type="date"  name="dataDeNascimento" id="dataDeNascimento" ><br>
+        <label >Usuário</label>
+        <input type="text" name="usuario" id="usuario">
 
-        <label for="">Senha</label><br>
-        <input type="password" name="senha" id="senha"><br>
+        <label for="">Data de nascimento</label>
+        <input type="date"  name="dataDeNascimento" id="dataDeNascimento" >
 
-        <label for="">Comentários</label><br>
-        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
-
-        <h2>Camisa</h2>
-        <label for="">Selecione a cor</label><br>
-        <input type="color" name="corCamisa" id="">
+        <label for="">Senha</label>
+        <input type="password" name="senha" id="senha">
 
         <h2>Endereço</h2>
         <hr>
+
         <label for="">Estado:</label>
         <select name="estado" id="estado">
-        
+        <option value="CE">Ceará</option>
+        <option value="PE">Pernambuco</option>
         </select>
+
+        <label for="">Cidades:</label>
+        <input type="text" list="cidades">
+        <datalist id="cidades"></datalist>
+
+        <button>Enviar</button>
 
     </form>
 </body>
